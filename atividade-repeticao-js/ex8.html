@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <script>
+        var nota1 = parseFloat(prompt("Insira a nota da primeira avaliação do aluno"));
+        var nota2 = parseFloat(prompt("Insira a nota da segunda avaliação do aluno"));
+        var media = (nota1 + nota2) /2;
+
+        while (nota1 >10 || nota1<0){
+            alert("Insira novamente o valor da avaliação 1. (SÓ SÃO ACEITOS VALORES DE 0 A 10.");
+            var nota1= parseFloat(prompt("Insira a nota da primeira avaliação do aluno novamente."));
+        } while (nota2 > 10 || nota2<0){
+            alert("Insira novamente o valor da avaliação 2. (SÓ SÃO ACEITOS VALORES DE 0 A 10.");
+            var nota2= parseFloat(prompt("Insira a nota da segunda avaliação do aluno novamente."));
+        } 
+            document.write(`O valor da primeira nota inserida foi: ${nota1}. O valor da segunda nota inserida foi: ${nota2}. A média dessas notas é de: ${media}. `);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
